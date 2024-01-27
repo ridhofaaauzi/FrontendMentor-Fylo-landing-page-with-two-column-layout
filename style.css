@@ -1,0 +1,454 @@
+/* Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+/* Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.header .header-navigation .navigation-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding: 3rem;
+}
+
+.hero .hero-text .hero-title {
+  font-size: 42px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+  color: hsl(243, 87%, 12%);
+}
+
+.hero .hero-text .hero-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.hero .hero-text .hero-started {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero .hero-text .hero-started input {
+  border: 1px solid hsl(0, 0%, 75%);
+  width: 350px;
+  height: 40px;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.hero .hero-text .hero-started input::placeholder {
+  color: hsl(0, 0%, 75%);
+}
+
+.hero .hero-text .hero-started button {
+  border: none;
+  width: 200px;
+  height: 40px;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border-radius: 5px;
+}
+
+.hero .hero-text .hero-started button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.hero .hero-img img {
+  width: 100%;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 3rem;
+  position: relative;
+  z-index: 99;
+}
+
+#team {
+  background: url("images/bg-curve-desktop.svg") no-repeat center center/cover;
+}
+
+.team .team-text .team-title {
+  font-size: 42px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+  color: hsl(243, 87%, 12%);
+}
+
+.team .team-text .team-description p:nth-child(1) {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.team .team-text .team-description p:nth-child(2) {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.team .team-text .team-work .team-fylo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: hsl(170, 45%, 43%);
+  margin-bottom: 0.5rem;
+}
+
+.team .team-text .team-work .team-line {
+  width: 170px;
+  border: 1px solid hsl(170, 45%, 43%);
+  margin-bottom: 1rem;
+}
+
+.team .team-text .team-card {
+  width: 400px;
+  height: auto;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 2px 2px 2px 2px #ddd;
+  border-radius: 10px;
+}
+
+.team .team-text .team-card .team-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.team .team-text .team-card .team-profile .team-name h5 {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+}
+
+.team .team-text .team-card .team-profile .team-name span {
+  font-size: 13px;
+}
+
+.team .team-text .team-card .team-profile img {
+  width: 50px;
+  border-radius: 100%;
+}
+
+.team-img img {
+  width: 100%;
+}
+
+.signin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background-color: hsl(243, 87%, 12%);
+}
+
+#signin {
+  background-color: hsl(238, 22%, 44%);
+}
+
+.signin .signin-text .signin-title {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 1rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.signin .signin-text .signin-description {
+  max-width: 550px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.signin .form-signin {
+  max-width: 600px;
+}
+
+.signin .form-signin input {
+  width: 450px;
+  height: 35px;
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.signin .form-signin button {
+  border: none;
+  width: 200px;
+  height: 40px;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.signin .form-signin button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: hsl(243, 87%, 12%);
+  display: grid;
+  padding: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .footer-contact .footer-img img {
+  margin-bottom: 2rem;
+}
+
+.footer .footer-contact .footer-phone {
+  display: flex;
+  gap: 10px;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.footer .footer-contact .footer-email {
+  display: flex;
+  gap: 10px;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.footer .footer-navigation {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+.footer .footer-navigation ul {
+  list-style: none;
+}
+
+.footer .footer-navigation li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-social {
+  display: flex;
+  margin-top: 4rem;
+  gap: 25px;
+  margin-left: 5rem;
+  color: white;
+}
+
+.footer .footer-social .circle-social {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.footer .footer-social .circle-social:hover {
+  color: hsl(224, 93%, 58%);
+  border: 1px solid hsl(224, 93%, 58%);
+  cursor: pointer;
+}
+
+.footer .footer-social .circle-social ion-icon {
+  width: 25px;
+  height: 25px;
+  margin-top: 0.7rem;
+}
+
+@media (max-width: 1024px) {
+  .signin {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .header-logo img {
+    width: 150px;
+  }
+
+  .hero {
+    flex-flow: column-reverse;
+  }
+
+  .hero .hero-text {
+    text-align: center;
+  }
+
+  .hero .hero-text .hero-title {
+    font-size: 32px;
+  }
+
+  .hero .hero-text .hero-started {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero .hero-text .hero-started input {
+    border: 1px solid hsl(0, 0%, 75%);
+    width: 100%;
+    height: 40px;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .hero .hero-text .hero-started button {
+    border: none;
+    width: 100%;
+    height: 40px;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border-radius: 5px;
+  }
+
+  .team {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .team .team-text .team-title {
+    font-size: 32px;
+  }
+
+  .team .team-text .team-work .team-fylo {
+    justify-content: center;
+  }
+
+  .team .team-text .team-work .team-line {
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  .team .team-text .team-card {
+    margin: auto;
+  }
+
+  .signin {
+    flex-direction: column;
+  }
+
+  .signin .signin-text {
+    text-align: center;
+  }
+
+  .signin .signin-text .signin-title {
+    font-size: 24px;
+  }
+
+  .signin .signin-text .signin-description {
+    max-width: 600px;
+  }
+
+  .signin .form-signin {
+    width: 100%;
+  }
+
+  .signin .form-signin input {
+    width: 100%;
+    height: 35px;
+  }
+
+  .signin .form-signin button {
+    width: 100%;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer .footer-navigation {
+    display: block;
+  }
+
+  .footer .footer-navigation ul:nth-child(2) {
+    margin-top: 3rem;
+  }
+
+  .footer .footer-navigation li {
+    margin-bottom: 1rem;
+  }
+
+  .footer .footer-social {
+    display: flex;
+    margin-top: 0;
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .header .header-logo img {
+    width: 100px;
+  }
+
+  .header {
+    gap: 25px;
+  }
+
+  .header .header-navigation .navigation-list {
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .hero .hero-text .hero-title {
+    font-size: 24px;
+  }
+
+  .hero .hero-text .hero-description {
+    font-size: 16px;
+  }
+
+  .team .team-text .team-title {
+    font-size: 24px;
+  }
+
+  .team .team-text .team-card {
+    width: 350px;
+  }
+
+  .team .team-text .team-card .team-text .team-description p {
+    font-size: 13px;
+  }
+
+  .footer .footer-social {
+    margin-top: 2rem;
+  }
+}
